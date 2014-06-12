@@ -33,6 +33,8 @@
 		C7AB45F919469A8400EF586F /* PirateTreasure.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C7AB45ED19469A8400EF586F /* PirateTreasure.jpeg */; };
 		C7AB45FA19469A8400EF586F /* PirateTreasurer2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C7AB45EE19469A8400EF586F /* PirateTreasurer2.jpeg */; };
 		C7AB45FB19469A8400EF586F /* PirateWeapons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C7AB45EF19469A8400EF586F /* PirateWeapons.jpeg */; };
+		C7AB45FF1949500600EF586F /* TEATile.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB45FE1949500600EF586F /* TEATile.m */; };
+		C7AB46021949515D00EF586F /* TEAFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB46011949515D00EF586F /* TEAFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		C7AB45ED19469A8400EF586F /* PirateTreasure.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateTreasure.jpeg; sourceTree = "<group>"; };
 		C7AB45EE19469A8400EF586F /* PirateTreasurer2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateTreasurer2.jpeg; sourceTree = "<group>"; };
 		C7AB45EF19469A8400EF586F /* PirateWeapons.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateWeapons.jpeg; sourceTree = "<group>"; };
+		C7AB45FD1949500600EF586F /* TEATile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEATile.h; sourceTree = "<group>"; };
+		C7AB45FE1949500600EF586F /* TEATile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEATile.m; sourceTree = "<group>"; };
+		C7AB46001949515D00EF586F /* TEAFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAFactory.h; sourceTree = "<group>"; };
+		C7AB46011949515D00EF586F /* TEAFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				C7AB45BF1946966600EF586F /* TEAAppDelegate.m */,
 				C7AB45C11946966600EF586F /* Main.storyboard */,
 				C7AB45C41946966600EF586F /* TEAViewController.h */,
+				C7AB45FC19494FCE00EF586F /* Model */,
 				C7AB45C51946966600EF586F /* TEAViewController.m */,
 				C7AB45C71946966600EF586F /* Images.xcassets */,
 				C7AB45B61946966600EF586F /* Supporting Files */,
@@ -186,6 +193,25 @@
 				C7AB45D71946966600EF586F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7AB45FC19494FCE00EF586F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB46031949517000EF586F /* Factory */,
+				C7AB45FD1949500600EF586F /* TEATile.h */,
+				C7AB45FE1949500600EF586F /* TEATile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C7AB46031949517000EF586F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB46001949515D00EF586F /* TEAFactory.h */,
+				C7AB46011949515D00EF586F /* TEAFactory.m */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AB45FF1949500600EF586F /* TEATile.m in Sources */,
 				C7AB45C61946966600EF586F /* TEAViewController.m in Sources */,
 				C7AB45BC1946966600EF586F /* main.m in Sources */,
 				C7AB45C01946966600EF586F /* TEAAppDelegate.m in Sources */,
+				C7AB46021949515D00EF586F /* TEAFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +538,7 @@
 				C7AB45E01946966600EF586F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7AB45E11946966600EF586F /* Build configuration list for PBXNativeTarget "Pirate AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +547,7 @@
 				C7AB45E31946966600EF586F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

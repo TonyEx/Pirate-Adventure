@@ -7,6 +7,8 @@
 //
 
 #import "TEAViewController.h"
+#import "TEAFactory.h"
+
 
 @interface TEAViewController ()
 
@@ -18,6 +20,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	TEAFactory *factory = [[TEAFactory alloc] init];
+	NSArray *tiles = [factory tiles];
+	NSLog(@"%@", tiles);
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +33,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actionButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)northButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)westButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)southButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)eastButtonPressed:(UIButton *)sender {
+}
 @end
