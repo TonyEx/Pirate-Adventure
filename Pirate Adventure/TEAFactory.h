@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TEACharacter.h"
+#import "TEABoss.h"
 
 @interface TEAFactory : NSObject
 
 -(NSArray *)tiles;
+
+-(TEACharacter *) character;
+
+-(TEABoss *) boss;
 
 @end

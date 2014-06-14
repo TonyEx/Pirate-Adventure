@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73C8D31194CD7A300D7DEA0 /* TEAWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C8D30194CD7A300D7DEA0 /* TEAWeapon.m */; };
+		C73C8D34194CD7DE00D7DEA0 /* TEAArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C8D33194CD7DE00D7DEA0 /* TEAArmor.m */; };
+		C73C8D37194CD85300D7DEA0 /* TEACharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C8D36194CD85300D7DEA0 /* TEACharacter.m */; };
+		C73C8D3A194CF7AF00D7DEA0 /* TEABoss.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C8D39194CF7AF00D7DEA0 /* TEABoss.m */; };
 		C7AB45B01946966600EF586F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AB45AF1946966600EF586F /* Foundation.framework */; };
 		C7AB45B21946966600EF586F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AB45B11946966600EF586F /* CoreGraphics.framework */; };
 		C7AB45B41946966600EF586F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AB45B31946966600EF586F /* UIKit.framework */; };
@@ -48,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C73C8D2F194CD7A300D7DEA0 /* TEAWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAWeapon.h; sourceTree = "<group>"; };
+		C73C8D30194CD7A300D7DEA0 /* TEAWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAWeapon.m; sourceTree = "<group>"; };
+		C73C8D32194CD7DE00D7DEA0 /* TEAArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAArmor.h; sourceTree = "<group>"; };
+		C73C8D33194CD7DE00D7DEA0 /* TEAArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAArmor.m; sourceTree = "<group>"; };
+		C73C8D35194CD85300D7DEA0 /* TEACharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEACharacter.h; sourceTree = "<group>"; };
+		C73C8D36194CD85300D7DEA0 /* TEACharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEACharacter.m; sourceTree = "<group>"; };
+		C73C8D38194CF7AF00D7DEA0 /* TEABoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEABoss.h; sourceTree = "<group>"; };
+		C73C8D39194CF7AF00D7DEA0 /* TEABoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEABoss.m; sourceTree = "<group>"; };
 		C7AB45AC1946966600EF586F /* Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AB45AF1946966600EF586F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7AB45B11946966600EF586F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +121,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7638557194CBCAA00784A81 /* ImagesForBackground */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB45E419469A8400EF586F /* PirateAttack.jpg */,
+				C7AB45E519469A8400EF586F /* PirateBlacksmith.jpeg */,
+				C7AB45E619469A8400EF586F /* PirateBoss.jpeg */,
+				C7AB45E719469A8400EF586F /* PirateFriendlyDock.jpg */,
+				C7AB45E819469A8400EF586F /* PirateOctopusAttack.jpg */,
+				C7AB45E919469A8400EF586F /* PirateParrot.jpg */,
+				C7AB45EA19469A8400EF586F /* PiratePlank.jpg */,
+				C7AB45EB19469A8400EF586F /* PirateShipBattle.jpeg */,
+				C7AB45EC19469A8400EF586F /* PirateStart.jpg */,
+				C7AB45ED19469A8400EF586F /* PirateTreasure.jpeg */,
+				C7AB45EE19469A8400EF586F /* PirateTreasurer2.jpeg */,
+				C7AB45EF19469A8400EF586F /* PirateWeapons.jpeg */,
+			);
+			name = ImagesForBackground;
+			sourceTree = "<group>";
+		};
 		C7AB45A31946966600EF586F = {
 			isa = PBXGroup;
 			children = (
@@ -161,18 +192,7 @@
 				C7AB45B81946966600EF586F /* InfoPlist.strings */,
 				C7AB45BB1946966600EF586F /* main.m */,
 				C7AB45BD1946966600EF586F /* Pirate Adventure-Prefix.pch */,
-				C7AB45E419469A8400EF586F /* PirateAttack.jpg */,
-				C7AB45E519469A8400EF586F /* PirateBlacksmith.jpeg */,
-				C7AB45E619469A8400EF586F /* PirateBoss.jpeg */,
-				C7AB45E719469A8400EF586F /* PirateFriendlyDock.jpg */,
-				C7AB45E819469A8400EF586F /* PirateOctopusAttack.jpg */,
-				C7AB45E919469A8400EF586F /* PirateParrot.jpg */,
-				C7AB45EA19469A8400EF586F /* PiratePlank.jpg */,
-				C7AB45EB19469A8400EF586F /* PirateShipBattle.jpeg */,
-				C7AB45EC19469A8400EF586F /* PirateStart.jpg */,
-				C7AB45ED19469A8400EF586F /* PirateTreasure.jpeg */,
-				C7AB45EE19469A8400EF586F /* PirateTreasurer2.jpeg */,
-				C7AB45EF19469A8400EF586F /* PirateWeapons.jpeg */,
+				C7638557194CBCAA00784A81 /* ImagesForBackground */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +221,14 @@
 				C7AB46031949517000EF586F /* Factory */,
 				C7AB45FD1949500600EF586F /* TEATile.h */,
 				C7AB45FE1949500600EF586F /* TEATile.m */,
+				C73C8D2F194CD7A300D7DEA0 /* TEAWeapon.h */,
+				C73C8D30194CD7A300D7DEA0 /* TEAWeapon.m */,
+				C73C8D32194CD7DE00D7DEA0 /* TEAArmor.h */,
+				C73C8D33194CD7DE00D7DEA0 /* TEAArmor.m */,
+				C73C8D35194CD85300D7DEA0 /* TEACharacter.h */,
+				C73C8D36194CD85300D7DEA0 /* TEACharacter.m */,
+				C73C8D38194CF7AF00D7DEA0 /* TEABoss.h */,
+				C73C8D39194CF7AF00D7DEA0 /* TEABoss.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -327,10 +355,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73C8D37194CD85300D7DEA0 /* TEACharacter.m in Sources */,
 				C7AB45FF1949500600EF586F /* TEATile.m in Sources */,
 				C7AB45C61946966600EF586F /* TEAViewController.m in Sources */,
+				C73C8D31194CD7A300D7DEA0 /* TEAWeapon.m in Sources */,
+				C73C8D3A194CF7AF00D7DEA0 /* TEABoss.m in Sources */,
 				C7AB45BC1946966600EF586F /* main.m in Sources */,
 				C7AB45C01946966600EF586F /* TEAAppDelegate.m in Sources */,
+				C73C8D34194CD7DE00D7DEA0 /* TEAArmor.m in Sources */,
 				C7AB46021949515D00EF586F /* TEAFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

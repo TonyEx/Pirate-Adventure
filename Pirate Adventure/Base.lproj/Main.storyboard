@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PirateStart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GLy-1z-aMo">
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PirateStart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GLy-1z-aMo">
                                 <rect key="frame" x="-8" y="-48" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -117,10 +117,10 @@
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRR-86-M6a">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="243" translatesAutoresizingMaskIntoConstraints="NO" id="sRR-86-M6a">
                                         <rect key="frame" x="0.0" y="34" width="243" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -176,6 +176,17 @@
                                 </state>
                                 <connections>
                                     <action selector="southButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Rg-fk-HPJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9E-NA-a6u">
+                                <rect key="frame" x="9" y="533" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="0.99458644699999998" green="0.02423338681" blue="0.048190749599999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vA3-od-4ar"/>
                                 </connections>
                             </button>
                         </subviews>
