@@ -8,9 +8,11 @@
 
 #import "TEAViewController.h"
 #import "TEAFactory.h"
+#import "TEATile.h"
 
 
 @interface TEAViewController ()
+
 
 @end
 
@@ -22,8 +24,23 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	
 	TEAFactory *factory = [[TEAFactory alloc] init];
-	NSArray *tiles = [factory tiles];
-	NSLog(@"%@", tiles);
+	self.tiles = [factory tiles];
+	self.currentPoint = CGPointMake(0, 0);
+	NSLog(@"%f, %f", self.currentPoint.x, self.currentPoint.y);
+	
+	[self updateTile];
+}
+
+-(void)updateTile
+{
+	TEATile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+	
+	NSLog(@"%f, %f", self.currentPoint.x, self.currentPoint.y);
+	NSLog(@"%@", tileModel);
+	NSLog(@"%@", tileModel.story);
+//	NSLog(@"%@", tileModel.backgroundImage);
+//	NSLog(@"%@", tileModel.actionButtonName);
+	self.storyLabel.text = tileModel.story;
 	
 }
 

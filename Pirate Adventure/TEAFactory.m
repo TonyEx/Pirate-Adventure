@@ -17,37 +17,37 @@
 	tile1.story = @"story 1";
 	
 	TEATile *tile2 = [[TEATile alloc] init];
-	tile1.story = @"story 2";
+	tile2.story = @"story 2";
 	
 	TEATile *tile3 = [[TEATile alloc] init];
-	tile1.story = @"story 3";
+	tile3.story = @"story 3";
 	
 	TEATile *tile4 = [[TEATile alloc] init];
-	tile1.story = @"story 4";
+	tile4.story = @"story 4";
 	
 	TEATile *tile5 = [[TEATile alloc] init];
-	tile1.story = @"story 5";
+	tile5.story = @"story 5";
 	
 	TEATile *tile6 = [[TEATile alloc] init];
-	tile1.story = @"story 6";
+	tile6.story = @"story 6";
 	
 	TEATile *tile7 = [[TEATile alloc] init];
-	tile1.story = @"story 7";
+	tile7.story = @"story 7";
 	
 	TEATile *tile8 = [[TEATile alloc] init];
-	tile1.story = @"story 8";
+	tile8.story = @"story 8";
 	
 	TEATile *tile9 = [[TEATile alloc] init];
-	tile1.story = @"story 9";
+	tile9.story = @"story 9";
 	
 	TEATile *tile10 = [[TEATile alloc] init];
-	tile1.story = @"story 10";
+	tile10.story = @"story 10";
 	
 	TEATile *tile11 = [[TEATile alloc] init];
-	tile1.story = @"story 11";
+	tile11.story = @"story 11";
 	
 	TEATile *tile12 = [[TEATile alloc] init];
-	tile1.story = @"story 12";
+	tile12.story = @"story 12";
 	
 	NSMutableArray *firstColumn = [[NSMutableArray alloc] init];
 	[firstColumn addObject:tile1];

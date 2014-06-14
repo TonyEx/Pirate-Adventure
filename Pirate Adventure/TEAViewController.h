@@ -11,6 +11,10 @@
 @interface TEAViewController : UIViewController
 
 
+//	iVars
+@property(nonatomic) CGPoint currentPoint;
+@property(strong, nonatomic) NSArray *tiles;
+
 //	IB Outlets
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
