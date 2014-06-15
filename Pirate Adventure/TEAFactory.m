@@ -53,7 +53,7 @@
 	pistolWeapon.name = @"Pistol";
 	pistolWeapon.damage = 17;
 	tile5.weapon = pistolWeapon;
-	tile5.actionButtonName = @"Equip pistor";
+	tile5.actionButtonName = @"Equip pistol";
 	
 	TEATile *tile6 = [[TEATile alloc] init];
 	tile6.story = @"You have been captured by pirates and are ordered to walk the plank.";
